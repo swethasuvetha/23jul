@@ -1,0 +1,15 @@
+# Sample nested list
+nested_list = [[3, 7, 9], [5, 2, 1], [8, 4, 6]]
+
+max_value = float('-inf')  # Set max_value to negative infinity to ensure any value in the list is greater than this
+
+# Iterate through the nested list to find the maximum value
+for sublist in nested_list:
+    for num in sublist:
+        if num > max_value:
+            max_value = num
+
+# Calculate the sum of the maximum value in the nested list
+sum_max_value = max_value * len(nested_list)
+
+print("The sum of the maximum value in the nested list is:", sum_max_value)
